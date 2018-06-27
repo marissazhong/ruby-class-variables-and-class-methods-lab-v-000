@@ -20,7 +20,7 @@ class Song
   end
 
   def self.genres
-    @@genres
+    unique_genres = @@genres
     #need to eliminate duplicates
   end
 
