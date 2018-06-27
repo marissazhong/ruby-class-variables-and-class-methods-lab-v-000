@@ -49,12 +49,10 @@ class Song
 
   def self.genres
     unique_genres = genre_count.keys
-    #need to eliminate duplicates
   end
 
   def self.artists
     unique_artists = artist_count.keys
-    #need to eliminate duplicates
   end
 
 end
