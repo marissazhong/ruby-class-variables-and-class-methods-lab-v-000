@@ -30,7 +30,12 @@ class Song
   end
 
   def self.genre_count
+    counter = 0
+    genre_count = {}
+    while counter < @@counter
 
+      counter += 1
+    end
   end
 
   def self.artist_count
