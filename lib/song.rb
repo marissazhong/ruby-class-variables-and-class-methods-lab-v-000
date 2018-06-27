@@ -32,7 +32,7 @@ class Song
   def self.genre_count
     counter = 0
     genre_count = {}
-    while counter < @@counter
+    while counter < @@count
       if genre_count.has_key?(@@genres[counter])
         genre_count[counter] += 1
       else
