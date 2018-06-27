@@ -19,16 +19,6 @@ class Song
     @@count
   end
 
-  def self.genres
-    unique_genres = @@genres
-    #need to eliminate duplicates
-  end
-
-  def self.artists
-    @@artists
-    #need to eliminate duplicates
-  end
-
   def self.genre_count
     counter = 0
     genre_count = {}
@@ -55,6 +45,16 @@ class Song
       counter += 1
     end
     artist_count
+  end
+
+  def self.genres
+    unique_genres = genre_count.keys
+    #need to eliminate duplicates
+  end
+
+  def self.artists
+    unique_artists = artist_count.keys
+    #need to eliminate duplicates
   end
 
 end
