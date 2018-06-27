@@ -33,7 +33,11 @@ class Song
     counter = 0
     genre_count = {}
     while counter < @@counter
-
+      if genre_count.has_key?(@@genres[counter])
+        genre_count[counter] += 1
+      else
+        genre_count[counter] = 1
+      end
       counter += 1
     end
   end
