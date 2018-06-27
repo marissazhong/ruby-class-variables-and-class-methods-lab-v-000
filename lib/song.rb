@@ -40,12 +40,21 @@ class Song
       end
       counter += 1
     end
-    puts genre_count
     genre_count
   end
 
   def self.artist_count
-
+    counter = 0
+    artist_count = {}
+    while counter < @@count
+      if artist_count.has_key?(@@artists[counter])
+        artist_count[@@artists[counter]] += 1
+      else
+        artist_count[@@artists[counter]] = 1
+      end
+      counter += 1
+    end
+    artist_count
   end
 
 end
