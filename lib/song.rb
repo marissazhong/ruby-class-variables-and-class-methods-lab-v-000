@@ -21,10 +21,12 @@ class Song
 
   def self.genres
     @@genres
+    #need to eliminate duplicates
   end
 
   def self.artists
     @@artists
+    #need to eliminate duplicates
   end
 
   def self.genre_count
